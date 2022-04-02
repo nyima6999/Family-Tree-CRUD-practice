@@ -1,0 +1,93 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@200&display=swap");
+
+.App {
+  text-align: center;
+  font-family: "Poppins", sans-serif;
+  background-color: white;
+  background-image: url(./family\ .png);
+  background-repeat: no-repeat;
+  background-position-x: right;
+  background-position-y: bottom;
+  height: 100vh;
+}
+
+.App-logo {
+  height: 20vmin;
+  pointer-events: none;
+}
+
+.App-header {
+  box-shadow: 2.9px 4.9px rgb(248, 245, 245);
+}
+
+@media (prefers-reduced-motion: no-preference) {
+  .App-logo {
+    animation: App-logo-spin infinite 4s linear;
+  }
+}
+
+@keyframes App-logo-spin {
+  0% {
+    top: 0px;
+    left: 0px;
+    background: rgb(0, 255, 242);
+  }
+  15% {
+    top: 0px;
+    left: 100px;
+    background: rgb(0, 255, 13);
+  }
+}
+
+button {
+  border-radius: 10px;
+}
+
+.new-family-form {
+  border-radius: 20px;
+  cursor: pointer;
+  display: flex;
+  font-family: "Poppins", sans-serif;
+  font-size: 14px;
+  margin-left: 2px;
+  cursor: pointer;
+  display: flex;
+  font-family: "Poppins", sans-serif;
+  font-size: 14px;
+  margin-left: 2px;
+  align-items: center;
+  align-content: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  text-align: center;
+}
+
+.input-button {
+  display: flex;
+  justify-content: space-between;
+  gap: 40px;
+}
+
+.single-family {
+  align-items: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+@media (max-width: 1024px) {
+  .single-family {
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+  }
+}
+
+.delete-btn {
+  align-items: center;
+  display: flex;
+  justify-content: center;
+  height: 20px;
+}
