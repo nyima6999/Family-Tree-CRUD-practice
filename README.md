@@ -1,6 +1,6 @@
 Access: You can access the app by clicking this Front End: https://family-treeee.herokuapp.com/ Back End: https://family-treebackend.herokuapp.com/
 
-Approach: To build a user friendly client side data entry app. This app allows the users to enter family memebers information and to keep the record of family lineage from generation to generation.  
+Approach: To build a user friendly client-side data entry app. This app allows the users to enter family memebers information and to keep the record of family lineage from generation to generation.  
 
 Technologies Used: This app is purly build on react.js, with use of CSS for styling, and heroku for deployment.
 
