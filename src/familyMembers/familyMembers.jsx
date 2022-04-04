@@ -6,7 +6,7 @@ import { useEffect } from "react";
 
 const FamilyMembers = () => {
   const [Family, setFamily] = useState([]);
-  //  { _id: "1", name: "John", relationship: "Father", gender: "Male" },
+
   // fetching api
   const [requestError, setRequestError] = useState("");
   const [newFamilyServerError, setNewFamilyServerError] = useState("");
@@ -17,7 +17,7 @@ const FamilyMembers = () => {
     console.log(newFamily);
     // setFamily([newFamily, ...Family]);
 
-    const apiResponse = await fetch("http://localhost:3003/family", {
+    const apiResponse = await fetch(`${apiUrl}family`, {
       method: "POST",
       body: JSON.stringify(newFamily),
       headers: {
@@ -36,12 +36,9 @@ const FamilyMembers = () => {
 
   const deleteFamily = async (idToDelete) => {
     try {
-      const apiResponse = await fetch(
-        `http://localhost:3003/family/${idToDelete}`,
-        {
-          method: "DELETE",
-        }
-      );
+      const apiResponse = await fetch(`${apiUrl}family/${idToDelete}`, {
+        method: "DELETE",
+      });
       const parsedResponse = await apiResponse.json();
       console.log(parsedResponse);
       if (parsedResponse.success) {
@@ -56,16 +53,13 @@ const FamilyMembers = () => {
   };
 
   const updateFamily = async (idToUpdate, familyToUpdate) => {
-    const apiResponse = await fetch(
-      `http://localhost:3003/family/${idToUpdate}`,
-      {
-        method: "PUT",
-        body: JSON.stringify(familyToUpdate),
-        headers: {
-          "Content-Type": "application/json",
-        },
-      }
-    );
+    const apiResponse = await fetch(`${apiUrl}family/${idToUpdate}`, {
+      method: "PUT",
+      body: JSON.stringify(familyToUpdate),
+      headers: {
+        "Content-Type": "application/json",
+      },
+    });
     const parsedResponse = await apiResponse.json();
     if (parsedResponse.success) {
       const newFamily = Family.map((family) =>
@@ -79,7 +73,7 @@ const FamilyMembers = () => {
 
   const getFamily = async () => {
     try {
-      const Family = await fetch("http://localhost:3003/family");
+      const Family = await fetch(`${apiUrl}/family`);
       const parsedFamily = await Family.json();
       setFamily(parsedFamily.data);
     } catch (err) {
@@ -88,15 +82,6 @@ const FamilyMembers = () => {
   };
 
   useEffect(getFamily, []);
-
-  // useEffect(() => {
-  //   async function fetchData() {
-  //     const Family = await fetch("http://localhost:3003/family");
-  //     const parsedFamily = await Family.json();
-  //     setFamily(parsedFamily.data);
-  //   }
-  //   fetchData();
-  // }, []);
 
   return (
     <div>
