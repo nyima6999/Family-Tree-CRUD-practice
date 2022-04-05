@@ -1,3 +1,17 @@
+Access: You can access the app by clicking this Front End: https://family-treeee.herokuapp.com/ Back End: https://family-treebackend.herokuapp.com/
+
+Approach: To build a user friendly client-side data entry app. This app allows the users to enter family memeber's data and to keep record of family lineage from generation to generation.  
+
+Technologies Used: This app is purly build on react.js, with use of CSS for styling, and heroku for deployment.
+
+User Stories: The users can enter their family data such as name, relationship and gender and store them in cloud database, so that they can access family lineage any time. 
+
+Stretch Goals: Some ideas we can further implement into the app in the future:
+
+add an image of the person, add birthdate of the person, add login features, and  expand more family lineage database.
+
+
+
 # Getting Started with Create React App
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
@@ -68,3 +82,6 @@ This section has moved here: [https://facebook.github.io/create-react-app/docs/d
 ### `npm run build` fails to minify
 
 This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+
+
+
