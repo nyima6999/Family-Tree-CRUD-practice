@@ -17,7 +17,7 @@ const FamilyMembers = () => {
     console.log(newFamily);
     // setFamily([newFamily, ...Family]);
 
-    const apiResponse = await fetch(`${apiUrl}family`, {
+    const apiResponse = await fetch(`${apiUrl}/family`, {
       method: "POST",
       body: JSON.stringify(newFamily),
       headers: {
@@ -36,7 +36,7 @@ const FamilyMembers = () => {
 
   const deleteFamily = async (idToDelete) => {
     try {
-      const apiResponse = await fetch(`${apiUrl}family/${idToDelete}`, {
+      const apiResponse = await fetch(`${apiUrl}/family/${idToDelete}`, {
         method: "DELETE",
       });
       const parsedResponse = await apiResponse.json();
@@ -53,7 +53,7 @@ const FamilyMembers = () => {
   };
 
   const updateFamily = async (idToUpdate, familyToUpdate) => {
-    const apiResponse = await fetch(`${apiUrl}family/${idToUpdate}`, {
+    const apiResponse = await fetch(`${apiUrl}/family/${idToUpdate}`, {
       method: "PUT",
       body: JSON.stringify(familyToUpdate),
       headers: {
