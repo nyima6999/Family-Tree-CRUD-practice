@@ -1,3 +1,16 @@
+## New Version
+I want convert this app to a listing website, where one can list ads. 
+
+# Technologies Used
+-React Front End
+-Express Back End
+
+# Features
+- design a nice ads templates and add animations wherever necessary to make ads more interactive
+- add  user login authentification
+
+
+
 Access: You can access the app by clicking this Front End: https://family-treeee.herokuapp.com/ Back End: https://family-treebackend.herokuapp.com/
 
 Approach: To build a user friendly client-side data entry app. This app allows the users to enter family memeber's data and to keep record of family lineage from generation to generation.  
