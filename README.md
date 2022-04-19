@@ -1,9 +1,9 @@
-## New Version
-I want convert this app to a listing website, where one can list ads. 
+## New Version (P3 extension)
+- I want convert this app to a listing website, where one can list ads. 
 
 # Technologies Used
--React Front End
--Express Back End
+- React Front End
+- Express Back End
 
 # Features
 - design a nice ads templates and add animations wherever necessary to make ads more interactive
