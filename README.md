@@ -6,7 +6,7 @@
 
 # Features
 
-Access: You can access the app by clicking this Front End: https://family-treeee.herokuapp.com/ Back End: https://family-treebackend.herokuapp.com/
+Access:  Front End: https://family-treeee.herokuapp.com/ Back End: https://family-treebackend.herokuapp.com/
 
 Approach: To build a user friendly client-side data entry app. This app allows the users to enter family memeber's data and to keep record of family lineage from generation to generation.  
 
